@@ -1,6 +1,8 @@
 $('body').click(function() {
   console.log('hey')
 });
+$('.toc-slide').css('background', 'gray');
+
 $('.swiper-wrapper').css('display', 'block');
 
 var Webflow = Webflow || [];
