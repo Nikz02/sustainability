@@ -1,3 +1,6 @@
+$('body').click(function() {
+  console.log('hey')
+});
 $('.swiper-wrapper').css('display', 'block');
 
 var Webflow = Webflow || [];
