@@ -4,7 +4,8 @@ var Webflow = Webflow || [];
 Webflow.push(function() {
 if(!Webflow.env('editor')) {
 $('.swiper-wrapper').css('display', 'flex');
-
+$('[text-split]').css('opacity', '0');
+  
 let typeSplit = new SplitType("[text-split]", {
 types: "lines, words, chars",
 tagName: "span"
