@@ -1,4 +1,3 @@
-console.log('mic test');
 $('.swiper-wrapper').css('display', 'block');
 
 var Webflow = Webflow || [];
@@ -422,6 +421,5 @@ isKeyboardEnabled = true;
 }
 } else {
 $('.navbar').css('display', 'block');
-$('[text-split]').css('opacity', '1');
 }
 });
