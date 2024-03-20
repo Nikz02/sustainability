@@ -416,5 +416,6 @@ isKeyboardEnabled = true;
 }
 } else {
 $('.navbar').css('display', 'block');
+$('[text-split]').css('opacity', '1');
 }
 });
