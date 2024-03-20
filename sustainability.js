@@ -1,3 +1,4 @@
+console.log('mic test');
 $('.swiper-wrapper').css('display', 'block');
 
 var Webflow = Webflow || [];
