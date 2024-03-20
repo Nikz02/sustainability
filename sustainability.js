@@ -1,8 +1,3 @@
-$('body').click(function() {
-  console.log('hey')
-});
-$('.toc-slide').css('background', 'gray');
-
 $('.swiper-wrapper').css('display', 'block');
 
 var Webflow = Webflow || [];
@@ -247,12 +242,10 @@ $('.navbar').hide();
 $('.navbar').show();
 }
 }
+  
 navUpdate()
+  
 swiper.on('slideChange', function () {
-var ov = targetSlide.querySelectorAll('.overview-slide');
-if (prop.length > 0) {
-propAnim();
-}
 navUpdate()
 swiper.update();
 });
