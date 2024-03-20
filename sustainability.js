@@ -254,6 +254,7 @@ swiper.slideTo(7, 300);
 updateNavbarActiveState();
 });
 $('#overview1').on('click', function () {
+ovAnim();
 swiper.slideTo(2, 300);
 updateNavbarActiveState();
 });
