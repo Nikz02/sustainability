@@ -255,6 +255,7 @@ updateNavbarActiveState();
 });
 $('#overview1').on('click', function () {
 ovAnim();
+console.log('clicked');
 swiper.slideTo(2, 300);
 updateNavbarActiveState();
 });
