@@ -5,7 +5,7 @@ Webflow.push(function() {
 if(!Webflow.env('editor')) {
 $('.swiper-wrapper').css('display', 'flex');
 $('[text-split]').css('opacity', '0');
-  
+
 let typeSplit = new SplitType("[text-split]", {
 types: "lines, words, chars",
 tagName: "span"
@@ -244,6 +244,10 @@ $('.navbar').show();
 }
 navUpdate()
 swiper.on('slideChange', function () {
+var ov = targetSlide.querySelectorAll('.overview-slide');
+if (prop.length > 0) {
+propAnim();
+}
 navUpdate()
 swiper.update();
 });
@@ -254,7 +258,7 @@ swiper.slideTo(7, 300);
 updateNavbarActiveState();
 });
 $('#overview1').on('click', function () {
-ovAnim();
+//ovAnim();
 console.log('clicked');
 swiper.slideTo(2, 300);
 updateNavbarActiveState();
