@@ -616,6 +616,7 @@ swiper.slideNext();
 
 function backLeave() {
 var swiper = document.querySelector('.swiper').swiper;
+var currentSlide = swiper.slides[swiper.activeIndex];
 var back = currentSlide.querySelectorAll('.back-cover');
 if (back.length > 0) {
 setTimeout(function() {
