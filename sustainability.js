@@ -263,6 +263,7 @@ var health = targetSlide.querySelectorAll('.health-slide');
 var venture = targetSlide.querySelectorAll('.ventures-slide');
 var barn = targetSlide.querySelectorAll('.barn-slide');
 var level = targetSlide.querySelectorAll('.levelup-slide');
+var back = targetSlide.querySelectorAll('.back-cover');
 if (toc.length > 0) {
 tocAnim();
 }
@@ -340,6 +341,9 @@ barnAnim();
 }
 if (level.length > 0) {
 levelAnim();
+}
+if (back.length > 0) {
+backAnim();
 }
 }
 }
