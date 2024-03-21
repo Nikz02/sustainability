@@ -182,6 +182,12 @@ tl.from($('.kpan'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', s
 tl.from($('.kpan2'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
 }
 
+function healthAnim() {
+let tl = gsap.timeline({});
+tl.from($('.hpan'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
+tl.from($('.hpan2'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
+}
+
 gsap.set("[text-split]", { opacity: 1 });
 
 $(".slider-parent").each(function (index) {
@@ -227,6 +233,7 @@ var b2b = targetSlide.querySelectorAll('.b2b-cover');
 var sf = targetSlide.querySelectorAll('.sf-slide');
 var tran = targetSlide.querySelectorAll('.tran-slide');
 var kubra = targetSlide.querySelectorAll('.kubra-slide');
+var health = targetSlide.querySelectorAll('.health-slide');
 if (toc.length > 0) {
 tocAnim();
 }
@@ -292,6 +299,9 @@ tranAnim();
 }
 if (kubra.length > 0) {
 kubraAnim();
+}
+if (health.length > 0) {
+healthAnim();
 }
 }
 }
