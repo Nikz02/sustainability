@@ -206,13 +206,13 @@ tl.from($('.lpan'), { x: '-20%', opacity: 0, duration: .9, ease: 'power1.out', s
 tl.from($('.lpan2'), { x: '-20%', opacity: 0, duration: .9, ease: 'power1.out', stagger: { amount: 0.6 }}, 0);
 }
 
-function backAnim() {
+/*function backAnim() {
 let tl = gsap.timeline({});
 tl.from($('.bwipe1'), { width: '0%', duration: .4, delay: .1, ease: 'power2.out'});
 tl.from($('.bwipe2'), { width: '100%', duration: .4, delay: .1, ease: 'power2.out'}, 0);
-tl.from($('.bwipe3'), { width: '0%', duration: .4, delay: .3, ease: 'power2.out', stagger: { amount: 0.2 }}, 0);
-tl.from($('.bwipe4'), { clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)"}, { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: .6, ease: 'power2.out'}, 0);
-}
+tl.from($('.bwipe3'), { width: '0%', duration: .4, delay: .3, ease: 'power2.out', stagger: { amount: 0.1 }}, 0);
+tl.from($('.bwipe4'), { clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)"}, { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: .8, ease: 'power2.out'}, 0);
+}*/
   
 gsap.set("[text-split]", { opacity: 1 });
 
@@ -343,7 +343,7 @@ if (level.length > 0) {
 levelAnim();
 }
 if (back.length > 0) {
-backAnim();
+//backAnim();
 }
 }
 }
