@@ -388,7 +388,7 @@ logoArrow()
 
 function navUpdate() {
 var activeIndex = swiper.activeIndex;
-if (activeIndex === 0 || activeIndex === 7 || activeIndex === 14 || activeIndex === 19) {
+if (activeIndex === 0 || activeIndex === 7 || activeIndex === 14 || activeIndex === 19 || activeIndex === 27) {
 $('.navbar').hide();
 } else {
 $('.navbar').show();
@@ -621,7 +621,7 @@ var back = currentSlide.querySelectorAll('.back-cover');
 if (back.length > 0) {
 setTimeout(function() {
 $('.backcoverout').click();
-}, 300);
+}, 400);
 }
 }
   
