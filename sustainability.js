@@ -187,7 +187,13 @@ let tl = gsap.timeline({});
 tl.from($('.hpan'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
 tl.from($('.hpan2'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
 }
-
+  
+function ventAnim() {
+let tl = gsap.timeline({});
+tl.from($('.vrise'), { y: '30%', opacity: 0, duration: .6, ease: 'power1.out', stagger: { amount: 0.7 }});
+tl.from($('.vrise2'), { y: '30%', opacity: 0, duration: .6, ease: 'power1.out', stagger: { amount: 0.8 }}, 0);
+}
+  
 function barnAnim() {
 let tl = gsap.timeline({});
 tl.from($('.brise'), { y: '30%', opacity: 0, duration: .6, ease: 'power1.out', stagger: { amount: 0.7 }});
@@ -240,6 +246,7 @@ var sf = targetSlide.querySelectorAll('.sf-slide');
 var tran = targetSlide.querySelectorAll('.tran-slide');
 var kubra = targetSlide.querySelectorAll('.kubra-slide');
 var health = targetSlide.querySelectorAll('.health-slide');
+var venture = targetSlide.querySelectorAll('.ventures-slide');
 var barn = targetSlide.querySelectorAll('.barn-slide');
 if (toc.length > 0) {
 tocAnim();
@@ -309,6 +316,9 @@ kubraAnim();
 }
 if (health.length > 0) {
 healthAnim();
+}
+if (venture.length > 0) {
+ventAnim();
 }
 if (barn.length > 0) {
 barnAnim();
