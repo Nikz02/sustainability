@@ -199,6 +199,12 @@ let tl = gsap.timeline({});
 tl.from($('.brise'), { y: '30%', opacity: 0, duration: .6, ease: 'power1.out', stagger: { amount: 0.7 }});
 tl.from($('.brise2'), { y: '30%', opacity: 0, duration: .6, ease: 'power1.out', stagger: { amount: 0.8 }}, 0);
 }
+
+function levelAnim() {
+let tl = gsap.timeline({});
+tl.from($('.lpan'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
+tl.from($('.lpan2'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
+}
   
 gsap.set("[text-split]", { opacity: 1 });
 
@@ -248,6 +254,7 @@ var kubra = targetSlide.querySelectorAll('.kubra-slide');
 var health = targetSlide.querySelectorAll('.health-slide');
 var venture = targetSlide.querySelectorAll('.ventures-slide');
 var barn = targetSlide.querySelectorAll('.barn-slide');
+var level = targetSlide.querySelectorAll('.levelup-slide');
 if (toc.length > 0) {
 tocAnim();
 }
@@ -322,6 +329,9 @@ ventAnim();
 }
 if (barn.length > 0) {
 barnAnim();
+}
+if (level.length > 0) {
+levelAnim();
 }
 }
 }
@@ -425,6 +435,7 @@ var tran = currentSlide.querySelectorAll('.tran-slide');
 var kubra = currentSlide.querySelectorAll('.kubra-slide');
 var health = currentSlide.querySelectorAll('.health-slide');
 var venture = currentSlide.querySelectorAll('.ventures-slide');
+var barn = currentSlide.querySelectorAll('.barn-slide');
 if (wipeWhite.length > 0) {
 $('.slide1out').click();
 setTimeout(function() {
@@ -574,6 +585,12 @@ $('.slide25out').click();
 setTimeout(function() {
 swiper.slideNext();
 }, 600);
+}
+if (barn.length > 0) {
+$('.slide26out').click();
+setTimeout(function() {
+swiper.slideNext();
+}, 550);
 }
 }
 
