@@ -202,8 +202,8 @@ tl.from($('.brise2'), { y: '30%', opacity: 0, duration: .6, ease: 'power1.out', 
 
 function levelAnim() {
 let tl = gsap.timeline({});
-tl.from($('.lpan'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
-tl.from($('.lpan2'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
+tl.from($('.lpan'), { x: '-20%', opacity: 0, duration: .9, ease: 'power1.out', stagger: { amount: 0.6 }}, 0);
+tl.from($('.lpan2'), { x: '-20%', opacity: 0, duration: .9, ease: 'power1.out', stagger: { amount: 0.6 }}, 0);
 }
   
 gsap.set("[text-split]", { opacity: 1 });
@@ -436,6 +436,7 @@ var kubra = currentSlide.querySelectorAll('.kubra-slide');
 var health = currentSlide.querySelectorAll('.health-slide');
 var venture = currentSlide.querySelectorAll('.ventures-slide');
 var barn = currentSlide.querySelectorAll('.barn-slide');
+var level = currentSlide.querySelectorAll('.levelup-slide');
 if (wipeWhite.length > 0) {
 $('.slide1out').click();
 setTimeout(function() {
@@ -591,6 +592,12 @@ $('.slide26out').click();
 setTimeout(function() {
 swiper.slideNext();
 }, 550);
+}
+if (level.length > 0) {
+$('.slide27out').click();
+setTimeout(function() {
+swiper.slideNext();
+}, 600);
 }
 }
 
