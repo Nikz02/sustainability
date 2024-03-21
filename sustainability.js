@@ -188,6 +188,12 @@ tl.from($('.hpan'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', s
 tl.from($('.hpan2'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
 }
 
+function barnAnim() {
+let tl = gsap.timeline({});
+tl.from($('.brise'), { y: '30%', opacity: 0, duration: .6, ease: 'power1.out', stagger: { amount: 0.7 }});
+tl.from($('.brise2'), { y: '30%', opacity: 0, duration: .6, ease: 'power1.out', stagger: { amount: 0.8 }}, 0);
+}
+  
 gsap.set("[text-split]", { opacity: 1 });
 
 $(".slider-parent").each(function (index) {
@@ -234,6 +240,7 @@ var sf = targetSlide.querySelectorAll('.sf-slide');
 var tran = targetSlide.querySelectorAll('.tran-slide');
 var kubra = targetSlide.querySelectorAll('.kubra-slide');
 var health = targetSlide.querySelectorAll('.health-slide');
+var barn = targetSlide.querySelectorAll('.barn-slide');
 if (toc.length > 0) {
 tocAnim();
 }
@@ -302,6 +309,9 @@ kubraAnim();
 }
 if (health.length > 0) {
 healthAnim();
+}
+if (barn.length > 0) {
+barnAnim();
 }
 }
 }
