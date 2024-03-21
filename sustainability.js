@@ -529,7 +529,7 @@ if (kubra.length > 0) {
 $('.slide23out').click();
 setTimeout(function() {
 swiper.slideNext();
-}, 750);
+}, 800);
 }
 }
 
