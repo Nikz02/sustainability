@@ -119,6 +119,69 @@ tl.from($('.coll-slide .riseanim'), { y: '30%', opacity: 0, duration: .7, ease: 
 tl.from($('.coll-slide .riseanim2'), { y: '50%', opacity: 0, duration: .7, delay: .5, ease: 'power1.out', stagger: { amount: 0.45 }}, 0);
 }
 
+function carbAnim() {
+let tl = gsap.timeline({});
+tl.from($('.base1'), { y: '100%', duration: .3, ease: 'power1.out'});
+tl.from($('.base2'), { y: '100%', duration: .4, delay: .5, ease: 'power1.out'}, 0);
+tl.from($('.base3'), { y: '50%', opacity: 0, duration: .3, delay: .7, ease: 'power1.out', stagger: { amount: 0.3 }}, 0);
+tl.from($('.base4'), { y: '100%', duration: .5, delay: .9, ease: 'power1.out'}, 0);
+}
+
+$(".tower-slide .line").wrap('<div class="line-wrapper">');
+function towerAnim() {
+let tl = gsap.timeline({});
+tl.from($('[t-line]').find(".line"), {y: "100%", duration: .4, delay: .1, ease: "none", stagger: { amount: 0.7 }}, 0);
+tl.from($('[t-line2]').find(".line"), {y: "100%", duration: .4, delay: .1, ease: "none", stagger: { amount: 2 }}, 0);
+tl.from($('[t-line3]').find(".line"), {y: "100%", duration: .4, delay: .1, ease: "none", stagger: { amount: 1.3 }}, 0);
+tl.from($('[t-line4]').find(".line"), {y: "100%", duration: .4, delay: 1, ease: "none", stagger: { amount: .25 }}, 0);
+tl.from($('.t-opac'), {opacity: 0, duration: .4, delay: .1, ease: "power1.out", stagger: { amount: .8 }}, 0);
+}
+
+function westAnim() {
+let tl = gsap.timeline({});
+tl.from($('.fade-w'), { opacity: 0, delay: .2, duration: .5, ease: 'power1.out', stagger: { amount: 0.7 }});
+}
+
+function ranchAnim() {
+let tl = gsap.timeline({});
+tl.from($('.rrise'), { y: '30%', opacity: 0, duration: .6, ease: 'power1.out', stagger: { amount: 0.7 }});
+tl.from($('.rrise2'), { y: '30%', opacity: 0, duration: .6, ease: 'power1.out', stagger: { amount: 0.8 }}, 0);
+}
+
+function espAnim() {
+let tl = gsap.timeline({});
+tl.from($('.efade'), { opacity: 0, delay: .2, duration: .5, ease: 'power1.out', stagger: { amount: 0.7 }});
+tl.from($('.efade2'), { opacity: 0, delay: .2, duration: .5, ease: 'power1.out', stagger: { amount: 0.7 }}, 0);
+}
+
+function b2bAnim() {
+let tl = gsap.timeline({});
+tl.from($('.up'), { y: '-100%', duration: .3, ease: 'power1.out', stagger: { amount: 0.3 }});
+tl.from($('.up2'), { y: '-100%', duration: .3, delay: .5, ease: 'power1.out', stagger: { amount: 0.25 }}, 0);
+tl.from($('.up3'), { y: '-100%', opacity: 0, duration: .35, delay: 1.1, ease: 'power1.out'}, 0);
+}
+
+function sfAnim() {
+let tl = gsap.timeline({});
+tl.from($('.pan'), { x: '-30%', opacity: 0, duration: .8, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
+tl.from($('.pan2'), { x: '-30%', opacity: 0, duration: .8, ease: 'power1.out'}, 0);
+tl.from($('.pan3'), { x: '-40%', opacity: 0, duration: .8, delay: .2, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
+tl.from($('.pan4'), { x: '-40%', opacity: 0, duration: .8, delay: .35, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
+tl.from($('.pan5'), { x: '-20%', opacity: 0, duration: .8, delay: .5, ease: 'power1.out', stagger: { amount: 0.35 }}, 0);
+}
+
+function tranAnim() {
+let tl = gsap.timeline({});
+tl.from($('.tpan'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
+tl.from($('.tpan2'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
+}
+
+function kubraAnim() {
+let tl = gsap.timeline({});
+tl.from($('.kpan'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
+tl.from($('.kpan2'), { x: '-20%', opacity: 0, duration: .8, ease: 'power1.out', stagger: { amount: 0.5 }}, 0);
+}
+
 gsap.set("[text-split]", { opacity: 1 });
 
 $(".slider-parent").each(function (index) {
@@ -155,6 +218,15 @@ var mag = targetSlide.querySelectorAll('.mag-slide');
 var intl = targetSlide.querySelectorAll('.intl-slide');
 var hf = targetSlide.querySelectorAll('.hf-slide');
 var col = targetSlide.querySelectorAll('.coll-slide');
+var carb = targetSlide.querySelectorAll('.carb-slide');
+var tower = targetSlide.querySelectorAll('.tower-slide');
+var west = targetSlide.querySelectorAll('.west-slide');
+var ranch = targetSlide.querySelectorAll('.ranch-slide');
+var esp = targetSlide.querySelectorAll('.esp-slide');
+var b2b = targetSlide.querySelectorAll('.b2b-cover');
+var sf = targetSlide.querySelectorAll('.sf-slide');
+var tran = targetSlide.querySelectorAll('.tran-slide');
+var kubra = targetSlide.querySelectorAll('.kubra-slide');
 if (toc.length > 0) {
 tocAnim();
 }
@@ -193,6 +265,33 @@ hfAnim();
 }
 if (col.length > 0) {
 collAnim();
+}
+if (carb.length > 0) {
+carbAnim();
+}
+if (tower.length > 0) {
+towerAnim();
+}
+if (west.length > 0) {
+westAnim();
+}
+if (ranch.length > 0) {
+ranchAnim();
+}
+if (esp.length > 0) {
+espAnim();
+}
+if (b2b.length > 0) {
+b2bAnim();
+}
+if (sf.length > 0) {
+sfAnim();
+}
+if (tran.length > 0) {
+tranAnim();
+}
+if (kubra.length > 0) {
+kubraAnim();
 }
 }
 }
@@ -243,21 +342,19 @@ $('.navbar').show();
 }
 }
   
-navUpdate()
-  
+navUpdate();
+
 swiper.on('slideChange', function () {
-navUpdate()
+navUpdate();
 swiper.update();
 });
 
-//NAV CLICKS
 $('#educating').on('click', function () {
 swiper.slideTo(7, 300);
 updateNavbarActiveState();
 });
 $('#overview1').on('click', function () {
-//ovAnim();
-console.log('clicked');
+
 swiper.slideTo(2, 300);
 updateNavbarActiveState();
 });
@@ -287,6 +384,15 @@ var mag = currentSlide.querySelectorAll('.mag-slide');
 var intl = currentSlide.querySelectorAll('.intl-slide');
 var hf = currentSlide.querySelectorAll('.hf-slide');
 var col = currentSlide.querySelectorAll('.coll-slide');
+var carb = currentSlide.querySelectorAll('.carb-slide');
+var tower = currentSlide.querySelectorAll('.tower-slide');
+var west = currentSlide.querySelectorAll('.west-slide');
+var ranch = currentSlide.querySelectorAll('.ranch-slide');
+var esp = currentSlide.querySelectorAll('.esp-slide');
+var b2b = currentSlide.querySelectorAll('.b2b-cover');
+var sf = currentSlide.querySelectorAll('.sf-slide');
+var tran = currentSlide.querySelectorAll('.tran-slide');
+var kubra = currentSlide.querySelectorAll('.kubra-slide');
 if (wipeWhite.length > 0) {
 $('.slide1out').click();
 setTimeout(function() {
@@ -371,15 +477,66 @@ setTimeout(function() {
 swiper.slideNext();
 }, 650);
 }
-}
-/*
-$('.toc-item, .nav-right-logo').click(function(e){
-var slideIndex = parseInt($(this).attr('toc'));
-nextLeave();
+if (carb.length > 0) {
+$('.slide15out').click();
 setTimeout(function() {
+swiper.slideNext();
+}, 700);
+}
+if (tower.length > 0) {
+$('.slide16out').click();
+setTimeout(function() {
+swiper.slideNext();
+}, 700);
+}
+if (west.length > 0) {
+$('.slide17out').click();
+setTimeout(function() {
+swiper.slideNext();
+}, 550);
+}
+if (ranch.length > 0) {
+$('.slide18out').click();
+setTimeout(function() {
+swiper.slideNext();
+}, 550);
+}
+if (esp.length > 0) {
+$('.slide19out').click();
+setTimeout(function() {
+swiper.slideNext();
+}, 550);
+}
+if (b2b.length > 0) {
+$('.slide20out').click();
+setTimeout(function() {
+swiper.slideNext();
+}, 600);
+}
+if (sf.length > 0) {
+$('.slide21out').click();
+setTimeout(function() {
+swiper.slideNext();
+}, 600);
+}
+if (tran.length > 0) {
+$('.slide22out').click();
+setTimeout(function() {
+swiper.slideNext();
+}, 600);
+}
+if (kubra.length > 0) {
+$('.slide23out').click();
+setTimeout(function() {
+swiper.slideNext();
+}, 750);
+}
+}
+
+$('.toc-item, .nav-right-logo').click(function(e) {
+var slideIndex = parseInt($(this).attr('toc'));
 swiper.slideTo(slideIndex);
-}, 450);
-});*/
+});
 
 $('.swiper-next').on('click', function() {
 $('body').css('pointer-events', 'none');
