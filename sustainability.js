@@ -343,6 +343,7 @@ if (level.length > 0) {
 levelAnim();
 }
 if (back.length > 0) {
+$('.backcoverin').click();
 //backAnim();
 }
 }
@@ -613,6 +614,16 @@ swiper.slideNext();
 }
 }
 
+function backLeave() {
+var swiper = document.querySelector('.swiper').swiper;
+var back = currentSlide.querySelectorAll('.back-cover');
+if (back.length > 0) {
+setTimeout(function() {
+$('.backcoverout').click();
+}, 300);
+}
+}
+  
 $('.toc-item, .nav-right-logo').click(function(e) {
 var slideIndex = parseInt($(this).attr('toc'));
 swiper.slideTo(slideIndex);
@@ -624,7 +635,7 @@ nextLeave();
 });
 
 $('.swiper-prev').on('click', function() {
-
+backLeave();
 $('body').css('pointer-events', 'none');
 setTimeout(function() {
 swiper.slidePrev(); 
