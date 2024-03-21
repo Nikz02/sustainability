@@ -424,6 +424,7 @@ var sf = currentSlide.querySelectorAll('.sf-slide');
 var tran = currentSlide.querySelectorAll('.tran-slide');
 var kubra = currentSlide.querySelectorAll('.kubra-slide');
 var health = currentSlide.querySelectorAll('.health-slide');
+var venture = currentSlide.querySelectorAll('.ventures-slide');
 if (wipeWhite.length > 0) {
 $('.slide1out').click();
 setTimeout(function() {
@@ -567,6 +568,12 @@ $('.slide24out').click();
 setTimeout(function() {
 swiper.slideNext();
 }, 800);
+}
+if (venture.length > 0) {
+$('.slide25out').click();
+setTimeout(function() {
+swiper.slideNext();
+}, 600);
 }
 }
 
