@@ -403,6 +403,7 @@ var b2b = currentSlide.querySelectorAll('.b2b-cover');
 var sf = currentSlide.querySelectorAll('.sf-slide');
 var tran = currentSlide.querySelectorAll('.tran-slide');
 var kubra = currentSlide.querySelectorAll('.kubra-slide');
+var health = currentSlide.querySelectorAll('.health-slide');
 if (wipeWhite.length > 0) {
 $('.slide1out').click();
 setTimeout(function() {
@@ -537,6 +538,12 @@ swiper.slideNext();
 }
 if (kubra.length > 0) {
 $('.slide23out').click();
+setTimeout(function() {
+swiper.slideNext();
+}, 800);
+}
+if (health.length > 0) {
+$('.slide24out').click();
 setTimeout(function() {
 swiper.slideNext();
 }, 800);
