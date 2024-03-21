@@ -408,7 +408,7 @@ if (wipeWhite.length > 0) {
 $('.slide1out').click();
 setTimeout(function() {
 swiper.slideNext();
-}, 500);
+}, 600);
 }
 if (toc.length > 0) {
 $('.slide2out').click();
