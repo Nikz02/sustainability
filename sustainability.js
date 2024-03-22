@@ -358,6 +358,21 @@ $('.nav-link[href="#' + activeSectionId + '"]').addClass('active-link');
 
 updateNavbarActiveState();
 
+function updateLogos(activeIndex) {
+$('.logo').hide();
+if (activeIndex >= 0 && activeIndex <= 6) {
+$('.main-logo').show();
+} else if (activeIndex >= 7 && activeIndex <= 13) {
+$('.educating-logo').show();
+} else if (activeIndex >= 14 && activeIndex <= 18) {
+$('.lowering-logo').show();
+} else if (activeIndex >= 19 && activeIndex <= 26) {
+$('.b2b-logo').show();
+}
+}
+  
+updateLogos(swiper.activeIndex);
+  
 function logoArrow() {
 if ($('.swiper-slide:first-of-type').hasClass('swiper-slide-active')) {
 $('.swiper-prev').addClass('hide-btn');
@@ -398,6 +413,7 @@ $('.navbar').show();
 navUpdate();
 
 swiper.on('slideChange', function () {
+updateLogos(this.activeIndex);
 navUpdate();
 swiper.update();
 });
