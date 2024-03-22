@@ -327,7 +327,7 @@ sfAnim();
 if (tran.length > 0) {
 tranAnim();
 }
-/*if (kubra.length > 0) {
+if (kubra.length > 0) {
 kubraAnim();
 }
 if (health.length > 0) {
@@ -345,7 +345,7 @@ levelAnim();
 if (back.length > 0) {
 $('.backcoverin').click();
 //backAnim();
-}*/
+}
 }
 }
 });
@@ -582,7 +582,7 @@ setTimeout(function() {
 swiper.slideNext();
 }, 600);
 }
-/*if (kubra.length > 0) {
+if (kubra.length > 0) {
 $('.slide23out').click();
 setTimeout(function() {
 swiper.slideNext();
@@ -611,7 +611,7 @@ $('.slide27out').click();
 setTimeout(function() {
 swiper.slideNext();
 }, 600);
-}*/
+}
 }
 
 function backLeave() {
