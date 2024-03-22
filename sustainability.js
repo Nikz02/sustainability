@@ -640,7 +640,7 @@ backLeave();
 $('body').css('pointer-events', 'none');
 setTimeout(function() {
 swiper.slidePrev(); 
-}, 300)
+}, 200)
 });
 });
 
