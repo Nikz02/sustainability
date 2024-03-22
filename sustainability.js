@@ -359,15 +359,19 @@ $('.nav-link[href="#' + activeSectionId + '"]').addClass('active-link');
 updateNavbarActiveState();
 
 function updateLogos(activeIndex) {
-$('.logo').hide();
+// Show/hide logos based on active slide index
 if (activeIndex >= 0 && activeIndex <= 6) {
 $('.main-logo').show();
+$('.educating-logo, .lowering-logo, .b2b-logo').hide();
 } else if (activeIndex >= 7 && activeIndex <= 13) {
 $('.educating-logo').show();
+$('.main-logo, .lowering-logo, .b2b-logo').hide();
 } else if (activeIndex >= 14 && activeIndex <= 18) {
 $('.lowering-logo').show();
+$('.main-logo, .educating-logo, .b2b-logo').hide();
 } else if (activeIndex >= 19 && activeIndex <= 26) {
 $('.b2b-logo').show();
+$('.main-logo, .educating-logo, .lowering-logo').hide();
 }
 }
   
