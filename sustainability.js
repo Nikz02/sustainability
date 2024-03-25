@@ -686,7 +686,7 @@ $('.backcoverout').click();
 }
 }
 
-$('.toc-item, .nav-right-logo').click(function(e) {
+$('.toc-item, .nav-right-logo, .dropdown-link').click(function(e) {
 var slideIndex = parseInt($(this).attr('toc'));
 swiper.slideTo(slideIndex);
 });
