@@ -451,7 +451,7 @@ $('.navbar').show();
 navUpdate();
 
 swiper.on('slideChange', function () {
-updatePagination();
+//updatePagination();
 updateLogos(this.activeIndex);
 navUpdate();
 swiper.update();
