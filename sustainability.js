@@ -715,10 +715,10 @@ $(document).keydown(function(event) {
 if (isKeyboardEnabled) {
 if (event.which === 39) {
 disableKeyboard();
-$('.swiper-next').click();
+$('.swiper-slide-active').find('.swiper-next').click();
 } else if (event.which === 37) {
 disableKeyboard();
-$('.swiper-prev').click();
+$('.swiper-slide-active').find('.swiper-prev').click();
 }
 }
 });
