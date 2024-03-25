@@ -233,7 +233,7 @@ init: function () {
 if (this.activeIndex !== 0) {
 $('.navbar').show();
 }
-updateNavigation(this.activeIndex);
+updateNavigation(swiper, this.activeIndex);
 },
 slideNextTransitionStart: function () {
 updateNavbarActiveState();
@@ -351,7 +351,7 @@ $('.backcoverin').click();
 }
 });
 
-function updateNavigation(index) {
+function updateNavigation(swiperInstance, index) {
 var activeIndex = index;
 var prevSlide = swiper.slides[activeIndex - 1];
 var nextSlide = swiper.slides[activeIndex + 1];
@@ -441,7 +441,7 @@ $('.navbar').show();
 navUpdate();
 
 swiper.on('slideChange', function () {
-updateNavigation(this.activeIndex);
+updateNavigation(swiper, this.activeIndex);
 updateLogos(this.activeIndex);
 navUpdate();
 swiper.update();
