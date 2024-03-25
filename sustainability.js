@@ -465,6 +465,7 @@ var wipeWhite = currentSlide.querySelectorAll('.white-mask');
 var toc = currentSlide.querySelectorAll('.toc-slide');
 var sustain = currentSlide.querySelectorAll('.sustain-slide');
 var ov = currentSlide.querySelectorAll('.overview-slide');
+var highlights = currentSlide.querySelectorAll('.highlights-slide');  
 var prop = currentSlide.querySelectorAll('.prop-slide');
 var em = currentSlide.querySelectorAll('.em-slide');
 var path = currentSlide.querySelectorAll('.path-slide');
@@ -511,6 +512,12 @@ $('.slide4out').click();
 setTimeout(function() {
 swiper.slideNext();
 }, 900);
+}
+if (highlights.length > 0) {
+//$('.slide4out').click();
+setTimeout(function() {
+swiper.slideNext();
+}, 300);
 }
 if (prop.length > 0) {
 $('.slide5out').click();
