@@ -533,7 +533,7 @@ if (highlights.length > 0) {
 $('.highlights-slideout').click();
 setTimeout(function() {
 swiper.slideNext();
-}, 800);
+}, 700);
 }
 if (prop.length > 0) {
 $('.slide5out').click();
