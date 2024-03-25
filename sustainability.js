@@ -1,5 +1,5 @@
-$(document).ready(function() {
-
+//$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function() {
 //$('.swiper-wrapper').css('display', 'block');
 
 var Webflow = Webflow || [];
