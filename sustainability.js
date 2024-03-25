@@ -233,7 +233,7 @@ init: function () {
 if (this.activeIndex !== 0) {
 $('.navbar').show();
 }
-updateNavigation(swiper, this.activeIndex);
+updateNavigation(this.activeIndex);
 },
 slideNextTransitionStart: function () {
 updateNavbarActiveState();
@@ -349,9 +349,8 @@ $('.backcoverin').click();
 }
 }
 }
-});
 
-function updateNavigation(swiperInstance, index) {
+function updateNavigation(index) {
 var activeIndex = index;
 var prevSlide = swiper.slides[activeIndex - 1];
 var nextSlide = swiper.slides[activeIndex + 1];
@@ -373,6 +372,9 @@ $('.page_number').text(formattedIndex);
 function formatIndex(index) {
 return index < 10 ? '0' + index : '' + index;
 }
+
+});
+
 
 function updateNavbarActiveState() {
 var activeSectionId = $('.swiper-slide-active').data('section-id');
@@ -441,7 +443,7 @@ $('.navbar').show();
 navUpdate();
 
 swiper.on('slideChange', function () {
-updateNavigation(swiper, this.activeIndex);
+updateNavigation(this.activeIndex);
 updateLogos(this.activeIndex);
 navUpdate();
 swiper.update();
