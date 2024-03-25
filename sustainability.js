@@ -42,10 +42,11 @@ tl.from($('.overview-graphic'), {y: "100%", opacity: 0, duration: .5, ease: "pow
 tl.from($('.vert-text-wrap'), {x: "50%", opacity: 0, duration: .5, ease: "power1.out", delay: 1}, 0);
 }
 
+$(".highlights-slide .line").wrap('<div class="line-wrapper">');
 function highlightsAnim() {
 let tl = gsap.timeline({});
 tl.fromTo($('.highlights-slide .clip-heading'), {clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)"}, { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: .8, ease: 'power1.out'});
-tl.from($('[h-line1]').find(".line"), {y: "100%", duration: 1, ease: "expo.out", stagger: { amount: 0.4 } });
+tl.from($('[h-line1]').find(".line"), {y: "100%", duration: 1, ease: "expo.out", stagger: { amount: 0.4 } }, 0);
 tl.from($('[h-line2]').find(".line"), {y: "100%", duration: 1, ease: "expo.out", stagger: { amount: 0.4 } }, 0);
 tl.from($('[h-line3]').find(".line"), {y: "100%", duration: 1, ease: "expo.out", stagger: { amount: 0.4 } }, 0);
 //tl.from($('[h-p1]').find(".line"), {y: "100%", duration: 1, ease: "expo.out", delay: .3, stagger: { amount: 0.4 } }, 0);
