@@ -366,7 +366,7 @@ $('.backcoverin').click();
 }
 });
 
-updatePagination();
+/*updatePagination();
 
 function updatePagination() {
 var currentSlide = swiper.slides[swiper.activeIndex];
@@ -382,7 +382,7 @@ $('.prev-title').text(prevPageTitle ? prevPageTitle : "");
 
 // Update text block for pagination
 $('.page_num').text(pageNumber < 10 ? '0' + pageNumber : pageNumber);
-}
+}*/
 
 function updateNavbarActiveState() {
 var activeSectionId = $('.swiper-slide-active').data('section-id');
