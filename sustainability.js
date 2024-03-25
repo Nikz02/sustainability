@@ -417,8 +417,6 @@ $('.navbar').show();
 navUpdate();
 
 swiper.on('slideChange', function () {
-//updateNavigation(this.activeIndex);
-  updatePagination()
 updateLogos(this.activeIndex);
 navUpdate();
 swiper.update();
