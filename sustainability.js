@@ -1,4 +1,6 @@
-$('.swiper-wrapper').css('display', 'block');
+$(document).ready(function() {
+
+//$('.swiper-wrapper').css('display', 'block');
 
 var Webflow = Webflow || [];
 Webflow.push(function() {
@@ -736,4 +738,6 @@ isKeyboardEnabled = true;
 } else {
 $('.navbar').css('display', 'block');
 }
+});
+//END OF DOC READY  
 });
