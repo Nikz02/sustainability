@@ -229,9 +229,13 @@ hashNavigation: {
 replaceState: true,
 },
 on: {
+slideChange: function() {
+  updatePagination()
+},
 init: function () {
 if (this.activeIndex !== 0) {
 $('.navbar').show();
+  updatePagination()
 }
 //updateNavigation(this.activeIndex);
 },
@@ -349,10 +353,8 @@ $('.backcoverin').click();
 }
 }
 }
-});
 
-  
-function updatePagination() {
+  function updatePagination() {
 var activeSlide = this.slides[this.activeIndex];
 var prevSlide = this.slides[this.previousIndex];
 var nextSlide = this.slides[this.activeIndex + 1];
@@ -367,6 +369,10 @@ return $(slide).attr('page-title') || '';
 }
   
 updatePagination();
+});
+
+  
+
 /*
 function updateNavigation(index) {
 var activeIndex = index;
