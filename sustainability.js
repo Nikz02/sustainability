@@ -233,7 +233,7 @@ init: function () {
 if (this.activeIndex !== 0) {
 $('.navbar').show();
 }
-updateNavigation(this.activeIndex);
+//updateNavigation(this.activeIndex);
 },
 slideNextTransitionStart: function () {
 updateNavbarActiveState();
@@ -442,7 +442,7 @@ $('.navbar').show();
 navUpdate();
 
 swiper.on('slideChange', function () {
-updateNavigation(this.activeIndex);
+//updateNavigation(this.activeIndex);
 updateLogos(this.activeIndex);
 navUpdate();
 swiper.update();
