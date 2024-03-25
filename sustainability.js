@@ -42,6 +42,17 @@ tl.from($('.overview-graphic'), {y: "100%", opacity: 0, duration: .5, ease: "pow
 tl.from($('.vert-text-wrap'), {x: "50%", opacity: 0, duration: .5, ease: "power1.out", delay: 1}, 0);
 }
 
+function highlightsAnim() {
+let tl = gsap.timeline({});
+tl.fromTo($('.highlights-slide .clip-heading'), {clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)"}, { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: .8, ease: 'power1.out'});
+tl.from($('[h-line1]').find(".line"), {y: "100%", duration: 1, ease: "expo.out", stagger: { amount: 0.4 } });
+tl.from($('[h-line2]').find(".line"), {y: "100%", duration: 1, ease: "expo.out", stagger: { amount: 0.4 } }, 0);
+tl.from($('[h-line3]').find(".line"), {y: "100%", duration: 1, ease: "expo.out", stagger: { amount: 0.4 } }, 0);
+//tl.from($('[h-p1]').find(".line"), {y: "100%", duration: 1, ease: "expo.out", delay: .3, stagger: { amount: 0.4 } }, 0);
+//tl.from($('[h-p2]').find(".line"), {y: "100%", duration: 1, ease: "expo.out", delay: .3, stagger: { amount: 0.4 } }, 0);
+//tl.from($('[h-p3]').find(".line"), {y: "100%", duration: 1, ease: "expo.out", delay: .3, stagger: { amount: 0.4 } }, 0);
+}
+
 $(".prop-title .line").wrap('<div class="line-wrapper">');
 function propAnim() {
 let tl = gsap.timeline({});
@@ -240,6 +251,7 @@ var targetSlide = this.slides[this.realIndex];
 var toc = targetSlide.querySelectorAll('.toc-slide');
 var sus = targetSlide.querySelectorAll('.sustain-slide');
 var ov = targetSlide.querySelectorAll('.overview-slide');
+var highlights = targetSlide.querySelectorAll('.highlights-slide');
 var prop = targetSlide.querySelectorAll('.prop-slide');
 var em = targetSlide.querySelectorAll('.em-slide');
 var path = targetSlide.querySelectorAll('.path-slide');
@@ -272,6 +284,9 @@ susAnim();
 }
 if (ov.length > 0) {
 ovAnim();
+}
+if (highlights.length > 0) {
+highlightsAnim();
 }
 if (prop.length > 0) {
 propAnim();
