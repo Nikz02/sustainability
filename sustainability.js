@@ -229,15 +229,10 @@ hashNavigation: {
 replaceState: true,
 },
 on: {
-slideChange: function() {
-updatePagination.call(this);
-},
 init: function () {
 if (this.activeIndex !== 0) {
 $('.navbar').show();
-updatePagination.call(this);
 }
-//updateNavigation(this.activeIndex);
 },
 slideNextTransitionStart: function () {
 updateNavbarActiveState();
@@ -353,49 +348,7 @@ $('.backcoverin').click();
 }
 }
 }
-
-  function updatePagination() {
-var activeSlide = this.slides[this.activeIndex];
-var prevSlide = this.slides[this.previousIndex];
-var nextSlide = this.slides[this.activeIndex + 1];
-$('.prev-title').text(getSlideTitle(prevSlide));
-$('.next-title').text(getSlideTitle(nextSlide));
-//$('.page-number').text(this.activeIndex + 1);
-}
-
-function getSlideTitle(slide) {
-if (!slide) return '';
-return $(slide).attr('page-title') || '';
-}
-  
-//updatePagination();
 });
-
-  
-
-/*
-function updateNavigation(index) {
-var activeIndex = index;
-var prevSlide = swiper.slides[activeIndex - 1];
-var nextSlide = swiper.slides[activeIndex + 1];
-$('.prev-title').text(getSlideTitle(prevSlide));
-$('.next-title').text(getSlideTitle(nextSlide));
-setPageNumber(activeIndex);
-}
-
-function getSlideTitle(slide) {
-if (!slide) return '';
-return $(slide).attr('page-title') || '';
-}
-
-function setPageNumber(index) {
-var formattedIndex = formatIndex(index + 1);
-$('.page_number').text(formattedIndex);
-}
-
-function formatIndex(index) {
-return index < 10 ? '0' + index : '' + index;
-}*/
 
 function updateNavbarActiveState() {
 var activeSectionId = $('.swiper-slide-active').data('section-id');
