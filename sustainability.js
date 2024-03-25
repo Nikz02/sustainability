@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 $('.swiper-wrapper').css('display', 'block');
 
 var Webflow = Webflow || [];
@@ -736,4 +738,7 @@ isKeyboardEnabled = true;
 } else {
 $('.navbar').css('display', 'block');
 }
+});
+
+//END OF DOC READY  
 });
