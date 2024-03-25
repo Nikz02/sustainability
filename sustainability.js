@@ -530,10 +530,10 @@ swiper.slideNext();
 }, 900);
 }
 if (highlights.length > 0) {
-//$('.slide4out').click();
+$('.highlights-slideout').click();
 setTimeout(function() {
 swiper.slideNext();
-}, 300);
+}, 800);
 }
 if (prop.length > 0) {
 $('.slide5out').click();
