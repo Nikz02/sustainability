@@ -688,6 +688,9 @@ $('.backcoverout').click();
 
 $('.toc-item, .nav-right-logo, .dropdown-link').click(function(e) {
 $('body').css('pointer-events', 'none');
+setTimeout(function() {
+$('body').css('pointer-events', 'auto');
+}, 1000);
 var slideIndex = parseInt($(this).attr('toc'));
 swiper.slideTo(slideIndex);
 });
