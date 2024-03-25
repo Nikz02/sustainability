@@ -230,12 +230,12 @@ replaceState: true,
 },
 on: {
 slideChange: function() {
-  updatePagination()
+updatePagination.call(this);
 },
 init: function () {
 if (this.activeIndex !== 0) {
 $('.navbar').show();
-  updatePagination()
+updatePagination.call(this);
 }
 //updateNavigation(this.activeIndex);
 },
@@ -368,7 +368,7 @@ if (!slide) return '';
 return $(slide).attr('page-title') || '';
 }
   
-updatePagination();
+//updatePagination();
 });
 
   
