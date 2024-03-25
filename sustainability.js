@@ -349,7 +349,9 @@ $('.backcoverin').click();
 }
 }
 }
+});
 
+/*
 function updateNavigation(index) {
 var activeIndex = index;
 var prevSlide = swiper.slides[activeIndex - 1];
@@ -371,10 +373,7 @@ $('.page_number').text(formattedIndex);
 
 function formatIndex(index) {
 return index < 10 ? '0' + index : '' + index;
-}
-
-});
-
+}*/
 
 function updateNavbarActiveState() {
 var activeSectionId = $('.swiper-slide-active').data('section-id');
