@@ -688,15 +688,7 @@ $('.backcoverout').click();
 }
 
 $('.front-cover').click(function(e) {
-$('body').css('pointer-events', 'none');
-setTimeout(function() {
-$('body').css('pointer-events', 'auto');
-}, 1000);
-var slideIndex = parseInt($(this).attr('toc'));
-$('.slide1out').click();
-setTimeout(function() {
-swiper.slideNext();
-}, 600);
+$('.swiper-slide-active').find('.swiper-next').click();
 });
   
 $('.toc-item, .nav-right-logo, .dropdown-link, .nav-logo').click(function(e) {
