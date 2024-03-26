@@ -687,7 +687,7 @@ $('.backcoverout').click();
 }
 }
 
-$('.toc-item, .nav-right-logo, .dropdown-link').click(function(e) {
+$('.toc-item, .nav-right-logo, .dropdown-link, .nav-logo').click(function(e) {
 $('body').css('pointer-events', 'none');
 setTimeout(function() {
 $('body').css('pointer-events', 'auto');
