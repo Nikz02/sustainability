@@ -510,7 +510,7 @@ if (wipeWhite.length > 0) {
 $('.slide1out').click();
 setTimeout(function() {
 swiper.slideNext();
-}, 600);
+}, 700);
 }
 if (toc.length > 0) {
 $('.slide2out').click();
