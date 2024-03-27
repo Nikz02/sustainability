@@ -227,6 +227,13 @@ tl.from($('.bwipe3'), { width: '0%', duration: .4, delay: .3, ease: 'power2.out'
 tl.from($('.bwipe4'), { clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)"}, { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: .8, ease: 'power2.out'}, 0);
 }*/
 
+function propCount() {
+  $('.count-up').counterUp({
+    //delay: 10,
+    time: 3000
+  });
+}
+
 gsap.set("[text-split]", { opacity: 1 });
 
 $(".slider-parent").each(function (index) {
@@ -292,6 +299,7 @@ highlightsAnim();
 }
 if (prop.length > 0) {
 propAnim();
+propCount();
 }
 if (em.length > 0) {
 emAnim();
