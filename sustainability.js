@@ -1,4 +1,4 @@
-if (window.matchMedia("(max-width: 992px)").matches) {
+if (window.matchMedia("(min-width: 992px)").matches) {
 $('.swiper-wrapper').css('display', 'block');
 
 var Webflow = Webflow || [];
