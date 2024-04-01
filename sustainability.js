@@ -1,5 +1,4 @@
 if (window.matchMedia("(min-width: 992px)").matches) {
-$('.swiper-wrapper').css('display', 'block');
 
 var Webflow = Webflow || [];
 Webflow.push(function() {
@@ -751,5 +750,5 @@ $('.navbar').css('display', 'block');
 }
 });
 } else {
-
+$('.swiper-wrapper').css('display', 'block');
 }
