@@ -1,4 +1,4 @@
-
+if (window.matchMedia("(max-width: 992px)").matches) {
 $('.swiper-wrapper').css('display', 'block');
 
 var Webflow = Webflow || [];
@@ -750,3 +750,6 @@ isKeyboardEnabled = true;
 $('.navbar').css('display', 'block');
 }
 });
+} else {
+
+}
