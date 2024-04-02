@@ -745,6 +745,12 @@ enableKeyboard();
 function enableKeyboard() {
 isKeyboardEnabled = true;
 }
+
+setTimeout(function() {
+$('.slide1out').click();
+$('.slider-buttons.cover-sb').css('pointer-events', 'auto');
+}, 2500);
+  
 } else {
 $('.navbar').css('display', 'block');
 }
