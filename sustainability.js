@@ -753,7 +753,7 @@ $('.slider-buttons.cover-sb').css('pointer-events', 'auto');
   
 } else {
 $('.navbar').css('display', 'block');
-$('.swiper-wrapper').css('display', 'block');
+$('.swiper-wrapper').css('display', 'flex');
 }
 });
 } else {
