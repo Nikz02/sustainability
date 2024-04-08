@@ -251,6 +251,11 @@ on: {
 init: function () {
 if (this.activeIndex !== 0) {
 $('.navbar').show();
+} else {
+  $('.swiper-slide-active').css('pointer-events', 'none');
+  setTimeout(function() {
+    console.log('2500 milliseconds')
+  }, 2500);
 }
 },
 slideNextTransitionStart: function () {
