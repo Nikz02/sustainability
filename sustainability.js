@@ -252,7 +252,7 @@ init: function () {
 if (this.activeIndex !== 0) {
 $('.navbar').show();
 } else {
-$('.swiper-slide, .swiper-slide-active').css('pointer-events', 'none');
+$('.swiper-slide').addClass('cover-active');
 setTimeout(function() {
 //swiper.slideNext();
   console.log('next')
