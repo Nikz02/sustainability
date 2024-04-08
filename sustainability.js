@@ -250,6 +250,10 @@ replaceState: true,
 on: {
 init: function () {
 if (this.activeIndex !== 0) {
+$('.swiper-slide-active').css('pointer-events', 'none');
+setTimeout(function() {
+  console.log('hey');
+},2500);
 $('.navbar').show();
 }
 },
