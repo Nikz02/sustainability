@@ -254,7 +254,7 @@ $('.navbar').show();
 } else {
 $('.swiper-slide').addClass('cover-active');
 setTimeout(function() {
-  $('.swiper-slide-active').find('.swiper-next').click();
+$('.swiper-slide-active').find('.swiper-next').click();
 }, 5000);
 }
 },
@@ -522,6 +522,7 @@ if (wipeWhite.length > 0) {
 $('.slide1out').click();
 setTimeout(function() {
 swiper.slideNext();
+$('.swiper-slide').removeClass('cover-active');
 }, 700);
 }
 if (toc.length > 0) {
