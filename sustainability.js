@@ -7,7 +7,7 @@ $('.swiper-wrapper').css('display', 'flex');
 $('[text-split]').css('opacity', '0');
 
 let typeSplit = new SplitType("[text-split]", {
-types: "lines, words, chars",
+types: "lines",
 tagName: "span"
 });
 
