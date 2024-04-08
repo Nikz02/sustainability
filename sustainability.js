@@ -255,7 +255,7 @@ $('.navbar').show();
 $('.swiper-slide').addClass('cover-active');
 setTimeout(function() {
 $('.swiper-slide-active').find('.swiper-next').click();
-}, 5000);
+}, 4000);
 }
 },
 slideNextTransitionStart: function () {
