@@ -252,7 +252,7 @@ init: function () {
 if (this.activeIndex !== 0) {
 $('.navbar').show();
 } else {
-$('body').css('pointer-events', 'none');
+$('.swiper-slide-active').css('pointer-events', 'none');
 setTimeout(function() {
 //swiper.slideNext();
   console.log('next')
