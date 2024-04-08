@@ -254,7 +254,8 @@ $('.navbar').show();
 } else {
 $('body').css('pointer-events', 'none');
 setTimeout(function() {
-swiper.slideNext();
+//swiper.slideNext();
+  console.log('next')
 }, 5000);
 }
 },
