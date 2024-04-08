@@ -254,8 +254,7 @@ $('.navbar').show();
 } else {
 $('.swiper-slide').addClass('cover-active');
 setTimeout(function() {
-  swiper.slideNext();
-  console.log('next')
+  $('.swiper-slide-active').find('.swiper-next').click();
 }, 5000);
 }
 },
