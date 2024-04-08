@@ -294,7 +294,7 @@ tocAnim();
 }
 if (sus.length > 0) {
 susAnim();
-$('.nav-link.overview-nav').css('background', '#d6ea9b');
+//$('.nav-link.overview-nav').css('background', '#d6ea9b');
 }
 if (ov.length > 0) {
 ovAnim();
