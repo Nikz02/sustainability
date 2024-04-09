@@ -705,7 +705,7 @@ $('.front-cover').click(function(e) {
 $('.swiper-slide-active').find('.swiper-next').click();
 });
 
-$('.toc-item, .nav-right-logo, .dropdown-link, .nav-logo, .toc-content-heading, .sustain-bullet-item').click(function(e) {
+$('.toc-item, .nav-right-logo, .dropdown-link, .nav-logo, .toc-content-heading, .sustain-bullet-item, .nav-right-logo-back').click(function(e) {
 $('body').css('pointer-events', 'none');
 setTimeout(function() {
 $('body').css('pointer-events', 'auto');
