@@ -1,4 +1,4 @@
-if (window.matchMedia("(min-width: 1025px)").matches) {
+if (window.matchMedia("(min-width: 992px)").matches) {
 
 var Webflow = Webflow || [];
 Webflow.push(function() {
