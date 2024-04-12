@@ -408,16 +408,16 @@ updateNavbarActiveState();
 
 function updateLogos(activeIndex) {
 // Show/hide logos based on active slide index
-if (activeIndex >= 0 && activeIndex <= 7) {
+if (activeIndex >= 0 && activeIndex <= 6) {
 $('.main-logo').show();
 $('.educating-logo, .lowering-logo, .b2b-logo').hide();
-} else if (activeIndex >= 8 && activeIndex <= 14) {
+} else if (activeIndex >= 7 && activeIndex <= 13) {
 $('.educating-logo').show();
 $('.main-logo, .lowering-logo, .b2b-logo').hide();
-} else if (activeIndex >= 15 && activeIndex <= 19) {
+} else if (activeIndex >= 14 && activeIndex <= 18) {
 $('.lowering-logo').show();
 $('.main-logo, .educating-logo, .b2b-logo').hide();
-} else if (activeIndex >= 20 && activeIndex <= 27) {
+} else if (activeIndex >= 19 && activeIndex <= 26) {
 $('.b2b-logo').show();
 $('.main-logo, .educating-logo, .lowering-logo').hide();
 }
@@ -455,7 +455,7 @@ logoArrow()
 
 function navUpdate() {
 var activeIndex = swiper.activeIndex;
-if (activeIndex === 0 || activeIndex === 8 || activeIndex === 15 || activeIndex === 20 || activeIndex === 28) {
+if (activeIndex === 0 || activeIndex === 7 || activeIndex === 14 || activeIndex === 19 || activeIndex === 27) {
 $('.navbar').hide();
 } else {
 $('.navbar').show();
@@ -472,7 +472,7 @@ swiper.update();
 });
 
 $('#educating').on('click', function () {
-swiper.slideTo(8, 300);
+swiper.slideTo(7, 300);
 updateNavbarActiveState();
 });
 $('#overview1').on('click', function () {
@@ -480,11 +480,11 @@ swiper.slideTo(2, 300);
 updateNavbarActiveState();
 });
 $('#lowering').on('click', function () {
-swiper.slideTo(15, 300);
+swiper.slideTo(14, 300);
 updateNavbarActiveState();
 });
 $('#b2b').on('click', function () {
-swiper.slideTo(20, 300);
+swiper.slideTo(19, 300);
 updateNavbarActiveState();
 });
 
