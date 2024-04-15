@@ -383,7 +383,7 @@ $('.backcoverin').click();
 $(window).on("load", function() {
 if (swiper.activeIndex === 0) {
   setTimeout(function() {
-    $('.swiper-next').click();
+$('.swiper-slide-active').find('.swiper-next').click();
   }, 4000);
 }
 });
