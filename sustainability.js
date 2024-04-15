@@ -253,9 +253,9 @@ if (this.activeIndex !== 0) {
 $('.navbar').show();
 } else {
 $('.swiper-slide').addClass('cover-active');
-setTimeout(function() {
+/*setTimeout(function() {
 $('.swiper-slide-active').find('.swiper-next').click();
-}, 4000);
+}, 4000);*/
 }
 },
 slideNextTransitionStart: function () {
@@ -380,6 +380,13 @@ $('.backcoverin').click();
 }
 });
 
+$(window).on("load", function() {
+if (swiper.activeIndex === 0) {
+  setTimeout(function() {
+    $('.swiper-next').click();
+  }, 4000);
+}
+});
 /*updatePagination();
 
 function updatePagination() {
